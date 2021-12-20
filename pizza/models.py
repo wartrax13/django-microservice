@@ -7,6 +7,9 @@ class Pizzeria(models.Model):
     address = models.CharField(max_length=512)
     phone = models.CharField(max_length=40)
 
+    # def __str__(self):
+    #     return self.owner.user
+
 
 class Pizza(models.Model):
     title = models.CharField(max_length=120)
